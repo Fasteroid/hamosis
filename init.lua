@@ -1,5 +1,5 @@
-local HAMIS_HP        = 0.11
-local MAX_HAMIS_COUNT = 50
+local HAMIS_HP        = 3
+local MAX_HAMIS_COUNT = 20
 
 local function getHamisCount(enemy_hp)
     return math.min( math.max(1, math.floor(enemy_hp / HAMIS_HP + 0.5)), MAX_HAMIS_COUNT )
